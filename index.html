@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Invoice</title>
+  <style type="text/css">
+    /* CSS for styling the invoice */
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+    th {
+      text-align: left;
+    }
+    /* added styles */
+    .logo {
+      width: 100px;
+      height: 100px;
+      float:right;
+    }
+    .company-name {
+      font-size: 24px;
+      font-weight: bold;
+      float:left;
+      margin-left: 10px;
+    }
+    .invoice-header {
+      clear: both;
+    }
+    .invoice-from-to {
+      width: 100%;
+      display: flex;
+    }
+    .invoice-from, .invoice-to {
+      width: 50%;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="invoice-header">
+    <img class="logo" src="https://www.example.com/logo.png" alt="Company Logo">
+    <div class="company-name">Company Name</div>
+  </div>
+  <h1>Invoice</h1>
+  <div class="invoice-from-to">
+    <div class="invoice-from">
+      <p><strong>Invoice From:</strong></p>
+      <p>Company Name</p>
+      <p>Address</p>
+      <p>City, State ZIP</p>
+      <p>Phone: 555-555-5555</p>
+    </div>
+    <div class="invoice-to">
+      <p><strong>Invoice To:</strong></p>
+      <p>Customer Name</p>
+      <p>Address</p>
+      <p>City, State ZIP</p>
+      <p>Phone: 555-555-5555</p>
+    </div>
+  </div>
+  <table>
+    <tr>
+      <th>Item</th>
+      <th>Description</th>
+      <th>Price</th>
+    </tr>
+    <tr>
+      <td>Item 1</td>
+      <td>Description of item 1</td>
+      <td>$10.00</td>
+    </tr>
+    <tr>
+      <td>Item 2</td>
+      <td>Description of item 2</td>
+      <td>$20.00</td>
+    </tr>
+    <tr>
+      <td>Item 3</td>
+      <td>Description of item 3</td>
+      <td>$30.00</td>
+    </tr>
+    <tr>
+      <td colspan="2" style="text-align: right;">Total:</td>
+      <td>$60.00</td>
+    </tr>
+  </table>
+  <br>
+  <p>Total Due: $60.00</p>
+ 
+  <p>Total Due: $60.00</p>
+  <p>Thank you for your business!</p>
+</body>
+</html>
